@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://d3js.org/d3.v7.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .nav {
+            background-color: #333;
+            color: #fff;
+            text-align: right;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+  </head>
+
+  <body style="text-align: center">
+    <!-- Content from the second HTML file starts here -->
+    <div class="nav">
+      <a href="/ica.html">Home</a>
+      <a href="/Kananke Liyanage/worldMap.html">Graph 1</a>
+      <a href="/Sardar/chordGraph.html">Graph 2</a>
+      <a href="/Rajai/index.html">Graph 3</a>
+      <a href="/Pothula/index.html">Graph 4</a>
+      <a href="/Murad/treemap.html">Graph 5</a>
+  </div>
+    <div class="section">
+      <h1><br>Animated Bar Chart</h1>
+    </div>
+    <!-- Content from the second HTML file ends here -->
+
+    <h3 id="donutTitle">Donut Filter For Bar Chart--Total Number of Students in Each Year</h3>
+    <div id="dounut"></div>
+
+    <h3 id="barTitle" style="display: none">
+      Number of Students in Ontario in 2015
+    </h3>
+    <div id="bar"></div>
+  </body>
+
+  <style>
+    div.tooltip {
+      width: auto;
+      position: absolute;
+      box-shadow: 0 0 5px rgb(34, 34, 34);
+      font-size: 8px;
+      color: black;
+      display: none;
+    }
+  </style>
+
+  <script src="charts.js"></script>
+</html>

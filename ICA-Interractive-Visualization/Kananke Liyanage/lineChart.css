@@ -1,0 +1,37 @@
+.primary-line {
+    stroke: #d03710;
+    fill: none;
+    stroke-width: 2px;
+    opacity: 0.6;
+}
+
+.secondary-line {
+    stroke: #2b4909;
+    fill: none;
+    stroke-width: 2px;
+    opacity: 0.6;
+}
+
+.label {
+    font-size: 13px;
+}
+
+div.lineTooltip {
+    position: absolute;
+    text-align: center;
+    padding: 2px;
+    border: 1px solid #16171d;
+    font: 12px sans-serif;
+    color: white;
+    background: rgb(23, 53, 92);
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+#dropdown_container {
+    width: 50%;
+}
+
+.selection {
+    width: 50%;
+}
