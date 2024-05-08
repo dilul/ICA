@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./chordGraph.css">
+    <title>chordGraph</title>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="/ica.html">Home</a>
+        <a href="/Nalinika/worldMap.html">Graph 1</a>
+        <a href="/Arslan/chordGraph.html">Graph 2</a>
+        <a href="/Ali/index.html">Graph 3</a>
+        <a href="/Sankeertana/index.html">Graph 4</a>
+        <a href="/Murad/treemap.html">Graph 5</a>
+    </div>
+
+    <div class="section">
+        <h1><br>Chord Graph</h1>
+        <p>The following Chord Map illustrates top 5 countries students from all over the world to Canada from 2015 to 2023.
+        </p>
+      </div>
+
+    <div class="chart">
+        <div id="dropdownContainer" class="dropdown-container">
+            <button onclick="toggleDropdown('country')" id="countryDropdownButton" class="dropdown-button">
+                Select Country</button>
+            <div id="countryDropdown" class="dropdown-content countryContant">
+            </div>
+            <button onclick="toggleDropdown('year')" id="yearDropdownButton" class="dropdown-button">Select
+                Year</button>
+            <div id="yearDropdown" class="dropdown-content yearContent">
+            </div>
+        </div>
+        <div id="chordGraph"></div>
+    </div>
+    <div id="tooltip"></div>
+</body>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="./chordGraph.js"></script>
+
+</html>
